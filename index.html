@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .btn {
+        height: 200px;
+        width: 200px;
+        border: 7px solid black;
+        border-radius: 20%;
+        margin: 2.5rem;
+      }
+      .red {
+        background: #ff4a80;
+      }
+      .blue {
+        background: rgb(91, 91, 248);
+      }
+      .green {
+        background: rgb(94, 255, 94);
+      }
+      .yellow {
+        background: rgb(235, 235, 84);
+      }
+      .flash {
+        background-color: #fff;
+        transition: background-color 0.25s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the Game</h2>
+    <h3>High Score: 0</h3>
+
+    <div class="container">
+      <div class="lineOne">
+        <div class="btn red" type="button" id="red"></div>
+        <div class="btn yellow" type="button" id="yellow"></div>
+      </div>
+      <div class="lineTwo">
+        <div class="btn green" type="button" id="green"></div>
+        <div class="btn blue" type="button" id="blue"></div>
+      </div>
+    </div>
+
+    <script src="SimonGame.js"></script>
+  </body>
+</html>

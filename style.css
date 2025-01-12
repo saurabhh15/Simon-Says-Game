@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Adjust gap between buttons */
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border: 7px solid black;
+  border-radius: 20%;
+  margin: 1rem;
+  transition: transform 0.2s; /* Add a hover effect */
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.red {
+  background: #ff4a80;
+}
+
+.blue {
+  background: rgb(91, 91, 248);
+}
+
+.green {
+  background: rgb(94, 255, 94);
+}
+
+.yellow {
+  background: rgb(235, 235, 84);
+}
+
+.flash {
+  background-color: #fff !important;
+}
+
+/* Text styles */
+h1,
+h2,
+h3 {
+  margin: 0.5rem;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+  .btn {
+    height: 150px;
+    width: 150px;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 0.25rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn {
+    height: 80px;
+    width: 80px;
+    margin: 0.2rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+}

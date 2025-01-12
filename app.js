@@ -14,14 +14,17 @@ let h3 = document.querySelector('h3'); // New element to display high score
 // Set the initial high score on page load
 h3.innerText = `High Score: ${highScore}`;
 
-document.addEventListener('keypress',function(){
-    if(started == false){
-        console.log('Game started');
-        started = true;
-
-        levelUp();
+function startGame() {
+    if (started == false) {
+      console.log('Game started');
+      started = true;
+      levelUp();
     }
-});
+  }
+  
+  // Start game on key press or screen tap
+  document.addEventListener('keypress', startGame);
+  document.addEventListener('touchstart', startGame); // For mobile devices
 
 function btnFlash(btn){
     btn.classList.add('flash');
